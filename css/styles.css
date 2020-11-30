@@ -218,7 +218,7 @@ ul {
   text-align: center;
   padding-top: 200px;
 }
-.hero-button {
+.main-button {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -237,8 +237,8 @@ ul {
 }
 .btn-nav:hover,
 .btn-nav:focus,
-.hero-button:hover,
-.hero-button:focus {
+.main-button:hover,
+.main-button:focus {
   color: var(--white);
   background-color: var(--accent-text-cl);
   font-weight: 700;
@@ -458,6 +458,7 @@ ul {
   background-color: var(--background);
   color: var(--white);
   display: flex;
+  justify-content: space-between;
 }
 .basement-info {
   margin-right: 0;
@@ -468,6 +469,7 @@ ul {
 
 }
 .basement-icons {
+  padding: 0;
   display: flex;
   justify-content: center;
 }
@@ -548,10 +550,9 @@ border-radius: 2px;
 .web {
   color: var(--accent-text-cl);
 }
-.basement-icons {
+.basement-icons-svg {
   padding: 0;
   margin: 0;
-  margin-right: auto;
   justify-content: start;
   width: 20px;
   height: 20px;
@@ -715,22 +716,20 @@ padding-bottom: 20px;
 
 /* *********subscribe form
 ************** */
-/* .subscribe-form {
-  display: flex;
-  align-items: center;
-  flex-direction: row; */
+.subscribe {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  margin-left: 60px;
+  margin-left: 93px;
 }
 
-.subscribe {
-  /* position: relative; */
-  padding-top: 0px;
-  padding-bottom: 0px;
-  height: 50px;
+.subscribe-form {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
+  margin-top: 20px;
 }
+
 .submit {
   background: #2196F3;
   color: white;
@@ -744,8 +743,7 @@ padding-bottom: 20px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  position: absolute;
-  bottom: 100%;
+  padding-bottom: 20px;
 }
 
 .subscribe-mail {

@@ -715,13 +715,21 @@ padding-bottom: 20px;
 
 /* *********subscribe form
 ************** */
+/* .subscribe-form {
+  display: flex;
+  align-items: center;
+  flex-direction: row; */
+}
+
 .subscribe {
-  position: relative;
+  /* position: relative; */
   padding-top: 0px;
   padding-bottom: 0px;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .submit {
   background: #2196F3;

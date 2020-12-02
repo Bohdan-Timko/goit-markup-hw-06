@@ -730,11 +730,6 @@ padding-bottom: 20px;
   margin-top: 20px;
 }
 
-.submit {
-  background: #2196F3;
-  color: white;
-}
-
 .subscribe-title {
   margin: 0;
   font-weight: 700;
@@ -747,18 +742,25 @@ padding-bottom: 20px;
 }
 
 .subscribe-mail {
+  display: inline-block;
   width: 358px;
   height: 50px;
-
-  outline: none;
-
   color: var(--primary-white-color);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: var(--dark-bg-cl);
+  outline: none;
   margin-right: 12px;
+}
+
+.submition {
+  display: block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white; 
+  margin-left: 12px;
 }
 
 .icon-send-svg {
@@ -772,6 +774,13 @@ padding-bottom: 20px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.subscribe-mail:valid {
+  color: green;
+}
+.subscribe-mail:invalid{
+color: red;
+}
+
 
 
 /* *********modal window
@@ -976,12 +985,10 @@ padding-bottom: 20px;
   display: inline-block;
 }
 
-.submit {
-  display: block;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* .submition {
+
+  
+} */
 
 
 /* *****checkbox***** */

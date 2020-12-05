@@ -728,9 +728,11 @@ padding-bottom: 20px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  columns: var(--accent-text-cl);
 }
 
 .subscribe-title {
+  display: block;
   margin: 0;
   font-weight: 700;
   font-size: 14px;
@@ -738,7 +740,7 @@ padding-bottom: 20px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
-  padding-bottom: 20px;
+  align-items: center;
 }
 
 .subscribe-mail {
@@ -756,16 +758,13 @@ padding-bottom: 20px;
 }
 
 .submition {
-  display: block;
+  display: inline-block;
   margin-top: 30px;
   color: var(--accent-text-cl);
   color: white; 
   margin-left: 12px;
-}
-
-.icon-send-svg {
-  fill: var(--primary-white-color);
-  padding: 10px, 13px, 28px, 13px;
+  margin-right: 10px;
+  background-color: var(--accent-text-cl);
 }
 
 .subscribe .subscribe-mail:hover,
@@ -779,6 +778,9 @@ padding-bottom: 20px;
 }
 .subscribe-mail:invalid{
 color: red;
+}
+.icon-send-svg {
+fill: var(--white);
 }
 
 
@@ -930,7 +932,19 @@ color: red;
   font-size: 12px;
   line-height: 1.15;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: var(--grey);
+}
+
+.modal-submition {
+  display: inline-block;
+  margin-top: 30px;
+  color: var(--accent-text-cl);
+  color: white; 
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--accent-text-cl);
 }
 
 .form-field .modal-input:hover,
@@ -985,11 +999,6 @@ color: red;
   display: inline-block;
 }
 
-/* .submition {
-
-  
-} */
-
 
 /* *****checkbox***** */
 .checkbox-custom {
@@ -1031,7 +1040,7 @@ color: red;
 
 .checkbox:checked + .icon {
   border-color: transparent;
-  background-color: var(--accent-cl);
+  background-color: var(--accent-text-cl);
   background-image: url("../images/svg/sprite.svg#icon-check");
   background-size: contain;
   background-origin: border-box;
@@ -1039,8 +1048,14 @@ color: red;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox-text {
+  color: gray;
+}
+
 .user-policy-link {
+  text-decoration: none;
   margin-left: 4px;
+  color: var(--accent-text-cl);
 }
 
 /* ***************** */

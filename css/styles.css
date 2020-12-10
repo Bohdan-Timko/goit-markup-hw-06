@@ -1041,7 +1041,7 @@ fill: var(--white);
 .checkbox:checked + .icon {
   border-color: transparent;
   background-color: var(--accent-text-cl);
-  background-image: url("../images/svg/sprite.svg#icon-check");
+  background-image: url("../images/svg/icon-check.svg");
   background-size: contain;
   background-origin: border-box;
   transition: 250ms;
